@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1 className="text-3xl font-bold underline">
+    <p className="">
       Hello world!
-    </h1>
+    </p>
 </template>
