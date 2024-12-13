@@ -12,6 +12,8 @@ export default {
       'foreground-detail':'#666666',
       'foreground-dark':'#ffffff',
       'frame':'#d1d1d1',
+      'dark-filter':'#000000',
+      'transparent':'transparent',
     },
     fontFamily:{
       'klein': ['Klein Trial', 'Courier'],
