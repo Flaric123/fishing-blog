@@ -4,7 +4,7 @@
         <div v-html="icon" class="icon">
         </div>
         <label class="bg-foreground-dark border-[3px] border-foreground-dark h-full self-center w-full rounded-[15px] transition-all text-foreground-main flex flex-row justify-center items-center outline-none
-                    peer-checked:bg-primary-dark-100 peer-checked:border-accent" 
+                    peer-checked:border-accent" 
                     :for="id" tabindex="0">{{value}}</label>
     </div>
 </template>
