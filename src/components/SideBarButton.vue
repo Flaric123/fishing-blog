@@ -1,11 +1,11 @@
 <template>
-    <div class="hover:cursor-pointer flex h-[45px] relative w-full">
-        <input class="peer appearance-none hidden" type="radio" :id="id" :value="value" v-model="model"/>
+    <div class="hover:cursor-pointer flex flex-row h-[45px] gap-[10px] pl-[7px] relative w-full items-center">
+        <input class="peer appearance-none border-[3px] outline-none rounded-[15px] transition-all border-foreground-dark w-full bg-foreground-dark h-full cursor-pointer absolute inset-0 z-10
+        checked:border-accent" type="radio" :id="id" :value="value" v-model="model"/>
         <div v-html="icon" class="icon">
         </div>
-        <label class="bg-foreground-dark border-[3px] border-foreground-dark h-full self-center w-full rounded-[15px] transition-all text-foreground-main flex flex-row justify-center items-center outline-none
-                    peer-checked:border-accent" 
-                    :for="id" tabindex="0">{{value}}</label>
+        <p class="self-center transition-all pointer-events-none z-20 text-foreground-main flex flex-row justify-center items-center outline-none
+                    peer-checked:border-accent" >{{value}}</p>
     </div>
 </template>
 
@@ -16,12 +16,12 @@
 
 <style lang="scss" scoped>
     .icon{
-        width:100%;
-        position:absolute;
-        padding-left:10px;
-        inset:0;
+        width:max-content;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
         align-content: center;
         pointer-events: none;
+        z-index: 20;
     }
     .icon :deep(svg){
         width:24px;
