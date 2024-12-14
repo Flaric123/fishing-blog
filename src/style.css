@@ -6,6 +6,7 @@
   font-family:'Roboto', sans-serif;
   font-weight: normal;
   color:theme('colors.foreground-main');
+  interpolate-size: allow-keywords;
 }
 
 html,body {

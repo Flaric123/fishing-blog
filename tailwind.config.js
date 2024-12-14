@@ -13,6 +13,7 @@ export default {
       'foreground-dark':'#ffffff',
       'frame':'#d1d1d1',
       'dark-filter':'#000000',
+      'required':'#FF0000',
       'transparent':'transparent',
     },
     fontFamily:{
