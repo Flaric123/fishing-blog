@@ -1,6 +1,6 @@
 <script setup>
   import AdSideBar from './components/AdSideBar.vue';
-import Header from './components/Header.vue';
+  import Header from './components/Header.vue';
   import NavSideBar from './components/NavSideBar.vue';
 </script>
 

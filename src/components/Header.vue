@@ -13,9 +13,9 @@
         </div>
         <div class="w-full h-[60px] absolute flex flex-row z-20 bottom-0 bg-foreground-dark px-[75px] text-[24px] font-bold gap-[24px] items-center place-content-center" >
             <p class="h-full w-[196px] text-accent text-center content-center">RIBAKU<span class="text-foreground-main">.BY</span></p>
-            <NavButton :icon="home" label="Главная" id="nav_1" v-model="chosenBob"/>
-            <NavButton :icon="camera" label="Видео" id="nav_2" v-model="chosenBob"/>
-            <NavButton :icon="message" label="Форум" id="nav_3" v-model="chosenBob"/>
+            <NavButton :icon="home" label="Главная" id="nav_1" v-model="currentPage"/>
+            <NavButton :icon="camera" label="Видео" id="nav_2" v-model="currentPage"/>
+            <NavButton :icon="message" label="Форум" id="nav_3" v-model="currentPage"/>
             <SearchBar class="self-center"/>
             <button class="h-[42px] w-[86px] flex flex-row gap-[4px] items-center justify-center rounded-[15px] border-[2px] border-frame transition-all">
                 <div v-html="pen" class="icon">
@@ -37,7 +37,11 @@
     import NavButton from './NavButton.vue'
     import { ref } from 'vue'
 
-    const chosenBob=ref('');
+    const currentPage=ref('Главная');
+
+    const onPageChange=()=>{
+        
+    }
 </script>
 
 <style lang="css" scoped>

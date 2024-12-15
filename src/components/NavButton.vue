@@ -1,7 +1,7 @@
 <template>
     <div class="hover:cursor-pointer h-full w-[86px] relative flex flex-row gap-[4px] items-center">
         <input class="peer appearance-none w-full h-full cursor-pointer transition-all absolute inset-0 border-b-[3px] border-foreground-dark
-        checked:border-accent" type="radio" :id="id" :value="label" v-model="model" @change="doSome"/>
+        checked:border-accent" type="radio" :id="id" :value="label" v-model="model" @change="onChange"/>
         <div v-html="icon" class="icon">
         </div>
         <label class="bg-foreground-dark text-[16px] transition-all text-foreground-main font-klein h-max self-center w-full flex justify-center items-center outline-none
@@ -11,7 +11,7 @@
 
 <script setup>
     const model=defineModel()
-    const {icon='',label='',id=''}=defineProps(['icon','label','id']);
+    const {icon='',label='',id='',onChange}=defineProps(['icon','label','id','onChange']);
 
     const doSome=()=>{
         console.log('fd')
