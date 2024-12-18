@@ -20,7 +20,11 @@ export default {
       'klein': ['Klein Trial', 'Courier'],
       'roboto':['Roboto', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      screens:{
+        'inf-sm':'0px'
+      }
+    },
   },
   plugins: [],
 }

@@ -14,6 +14,7 @@
 <script setup>
     import { ref, computed } from 'vue';
     import News from './News.vue';
+import { useWindowSize } from '@vueuse/core';
 
     const newsOption=ref(1);
     const news=[{
@@ -48,8 +49,10 @@
         return new URL(icon,import.meta.url).href
     }
 
+    const {width}=useWindowSize();
+
     const newsPageChange=()=>{
-        document.getElementById(`card_${newsOption.value}`)?.scrollIntoView({behavior:'smooth',inline:'center'})
+        document.getElementById(`card_${newsOption.value}`)?.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})
     }
 </script>
 

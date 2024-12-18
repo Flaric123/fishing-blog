@@ -9,7 +9,7 @@ import VideoPage from './components/VideoPage.vue'
 const router=createRouter({
     history: createWebHistory(),
     routes: [
-        {path:'/',name:'HomePage',component:HomePage},
+        {path:'/home',name:'HomePage',component:HomePage},
         {path:'/contact',name:'ContactPage',component:ContactPage},
         {path:'/video',name:'VideoPage',component:VideoPage},
     ]

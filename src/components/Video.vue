@@ -1,5 +1,6 @@
 <template>
-    <div class="w-[306px] h-max bg-foreground-dark rounded-[15px] shadow-lg">
+    <div class="w-[306px] h-max bg-foreground-dark rounded-[15px] shadow-lg
+    inf-sm:max-[940px]:place-self-center">
         <div class="w-full h-[172px] rounded-tr-[15px] rounded-tl-[15px] relative">
             <img src="../assets/site-specific/video-cover1.png" class="w-full h-full rounded-tr-[15px] rounded-tl-[15px]">
             <p class="bg-dark-filter bg-opacity-50 rounded-[5px] h-max w-max text-foreground-dark absolute bottom-[6px] right-[6px]">00:26:32</p>
