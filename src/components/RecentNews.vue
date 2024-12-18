@@ -1,12 +1,15 @@
 <template>
-    <div class="w-full h-max bg-foreground-dark flex flex-col p-[24px]  rounded-[15px]">
-        <p class="text-[24px] text-accent w-full">Самое важное</p>
-        <div class="grid grid-flow-col grid-cols-[repeat(2,392px)] gap-[24px] w-full h-max overflow-hidden">
+    <div class="w-full h-max bg-foreground-dark flex flex-col p-[24px] rounded-[15px]
+    inf-sm:max-md:p-[12px]">
+        <p class="text-[24px] text-accent w-full
+        inf-sm:max-md:text-[20px]">Самое важное</p>
+        <div class="grid grid-flow-col grid-cols-[repeat(2,392px)] gap-[24px] w-full h-max overflow-hidden
+        inf-sm:max-md:grid-cols-[repeat(2,296px)]">
             <News v-for="article in news" :icon="makeURL(article.icon)" :id="`card_${article.id}`" :desc="article.desc"/>
         </div>
-        <div class="flex flex-row gap-[12px] self-center mt-[24px]">
+        <div class="flex flex-row gap-[12px] self-center mt-[24px] w-full place-content-center">
             <input type="radio" v-for="option in options" :value=option v-model="newsOption" @change="newsPageChange"
-            class="appearance-none w-[70px] h-[10px] rounded-[100px] bg-foreground-detail checked:bg-accent transition-all cursor-pointer"/>
+            class="appearance-none w-dvw max-w-[70px] h-[10px] rounded-[100px] bg-foreground-detail checked:bg-accent transition-all cursor-pointer"/>
         </div>
     </div>
 </template>
