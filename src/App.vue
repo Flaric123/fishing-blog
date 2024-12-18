@@ -29,6 +29,11 @@ import home from '../src/assets/icons/home-line.svg?raw'
     <NavSideBar :class="{'hidden':width<768}"/>
     <div class="flex flex-col h-max"
     :class="{'col-span-full':width<768}">
+      <div class="w-full h-[200px] bg-foreground-dark hidden items-center justify-center text-[20px] mb-[20px]
+      inf-sm:max-md:flex"
+      v-if="route.fullPath=='/contact'">
+        <p>РЕКЛАМА</p> 
+      </div>
       <router-view>
       </router-view>
       <div class="w-full h-[40px] flex flex-row justify-evenly bg-foreground-dark shadow-2xl" v-show="width<768">
