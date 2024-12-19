@@ -1,5 +1,5 @@
 <template>
-    <div class="p-[24px] rounded-[15px] w-full h-max bg-foreground-dark">
+    <div class="p-[24px] rounded-[15px] w-full h-max bg-foreground-dark shadow-md">
         <div class="w-full flex flex-row justify-between">
             <div class="grid grid-cols-[repeat(2,minmax(0px,max-content))] text-foreground-main gap-x-[8px]">
                 <div class="rounded-full w-[48px] aspect-square bg-accent row-span-2 place-items-center content-center">
