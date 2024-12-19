@@ -9,21 +9,33 @@ import NavButton from './components/NavButton.vue';
 import home from '../src/assets/icons/home-line.svg?raw'
     import message from '../src/assets/icons/question-answer-line.svg?raw'
     import camera from '../src/assets/icons/question-answer-line-1.svg?raw'
+    import { useWindowScroll } from '@vueuse/core';
 
-  const {width}=useWindowSize();
+  const {width, height}=useWindowSize();
   const route=useRoute();
   const isVideoPage=ref(route.fullPath=='/video')
   const isMobile=ref(width<768)
   const currentPage=ref('Главная');
 
+
+
+  const { y } = useWindowScroll();
+  y.value=100;
+
   onMounted(()=>{
+    window.addEventListener('click', runOnScroll);
+    console.log(window);
     isVideoPage.value=route.fullPath=='/video';
-    console.log('hjel')
   })
+
+  const runOnScroll=()=>{
+    console.log(document);
+  }
 </script>
 
 <template>
   <Header></Header>
+  {{ y }}
   <div class="mt-[24px] h-max w-full grid grid-cols-[minmax(0px,196px)_minmax(0px,856px)_minmax(0px,196px)] gap-[24px] bg-background justify-center"
   :class="route.fullPath=='/video'?'grid-cols-[minmax(0px,196px)_minmax(0px,966px)_minmax(0px,86px)]':''">
     <NavSideBar :class="{'hidden':width<768}"/>

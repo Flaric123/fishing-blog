@@ -6,14 +6,16 @@
   font-family:'Roboto', sans-serif;
   font-weight: normal;
   color:theme('colors.foreground-main');
-  interpolate-size: allow-keywords;
+}
+
+html{
+  position:fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 html,body {
   margin: 0;
-  position:fixed;
-  overflow-y: auto;
-  overflow-x: hidden;
   position: relative;
   height:100%;
   width:100%;
