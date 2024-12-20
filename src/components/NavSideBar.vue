@@ -35,7 +35,7 @@
     import winter from '../assets/icons/winter.svg?raw'
     import { ref } from 'vue';
 
-    const currentCategorie=ref('');
+    const currentCategorie=defineModel();
 </script>
 
 <style lang="scss" scoped>

@@ -10,9 +10,9 @@
 </template>
 
 <script setup>
-    const model=defineModel()
-    const {icon='',label='',id='',link='/',mini=false}=defineProps(['icon','label','id','link','mini']);
     import { useRouter } from 'vue-router';
+    const model=defineModel()
+    const {icon='',label,id='',link='/',mini=false}=defineProps(['icon','label','id','link','mini']);
 
     const router=useRouter();
 

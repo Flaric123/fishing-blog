@@ -14,7 +14,8 @@
         </div>
         <div class="w-full flex flex-col mt-[12px] gap-[12px]">
             <p class="text-[24px] text-foreground-main"><span class="text-accent">>> </span>Готовим прикормку на весеннюю уклейку дома</p>
-            <img src="../assets/site-specific/article1.png" class="w-full h-[404px] rounded-[15px]">
+            <img src="../assets/site-specific/article1.png" class="w-full h-full min-h-[200px] rounded-[15px]
+            inf-sm:max-md:h-[148px] inf-sm:max-md:min-h-[200px]">
             <p class="text-[18px] text-foreground-main leading-[21px]">Ловля уклейки очень интересна и увлекательна, а если еще использовать прико рмку, то хорошие уловы не заставят себя ждать. Есть два наиболее простых способа приготовить прикорму на уклейку своими руками о них и пойдет речь.
                 <span class="text-accent cursor-pointer" @click="redirectToFull">Читать далее>></span></p>
 
